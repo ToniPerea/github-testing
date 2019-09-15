@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Git-Issues-Blog
+      uses: Sep0lkit/git-issues-blog@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
