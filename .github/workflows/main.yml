@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Git-Issues-Blog
-      uses: Sep0lkit/git-issues-blog@master
+      uses: Sep0lkit/git-issues-blog@release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
